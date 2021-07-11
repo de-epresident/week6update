@@ -35,7 +35,10 @@ app.get('/products/:id', (req, res) =>{
 
 //Create a post request 
 app.post('/products', (req, res) =>{
-//Create a product
+    if(!req.body.name || !req.body.description || !req.body.image || !req.body.price){
+        res.status(400).send('Please, fill all the required fields.')
+    }else{
+        //Create a product
 let newProduct = {
     id: products.length + 1,
     name: req.body.name,
@@ -46,6 +49,9 @@ let newProduct = {
     //add product to our product array and display product
     products.push(newProduct);
     res.json(products)
+
+    }
+
 })
 
 //Let's update a product using 'put' method
