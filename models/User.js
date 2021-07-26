@@ -1,15 +1,15 @@
 let user = [
     {
         id: 1,
-        email: "mosesojiko@gmail.com",
-        fullName: "Moses Ojiko",
+        email: "brownoviestan@gmail.com",
+        fullName: "Stanley Brown",
         password: "123456789"
     },
 
     {
         id: 2,
-        email: "johnsmith@gmail.com",
-        fullName: "John Smith",
+        email: "peaceejumi@gmail.com",
+        fullName: "Ejumi Peace",
         password: "913247853"
     },
 
